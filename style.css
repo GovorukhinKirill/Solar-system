@@ -1,0 +1,147 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stars{
+    background: #000 url(d2.png)repeat top center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+}
+.twinkling{
+    background: url(d1.png)repeat top center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    animation: move-stars 200s linear infinite ;
+}
+@keyframes move-stars {
+    0% {background-position: 0 0;}
+    100%{background-position: -10000px 5000px;}
+  }
+  .system{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .orbita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px white solid;
+    border-radius: 100%;
+    position: absolute;
+
+  }
+  .Tierra-img{
+    position: absolute;
+    top: 50% ;
+    left: -12px;
+    border-radius: 100%;
+    transform: translateY(-50%);
+  } 
+  .Tierra{
+    height: 500px;
+    width: 500px;
+    animation: spin 6s linear infinite;
+  }
+  @keyframes spin {
+    from {transform:rotate(0deg) ;}
+    to{ transform: rotate(360deg);}
+  }
+  .sun-img{ 
+    animation: spin 7s linear infinite;
+}
+
+.Tierra-img{
+    animation: spin 6s linear infinite;
+}
+.mapc{
+    height: 600px;
+    width: 600px; 
+    animation: spin 7s linear infinite; 
+}
+.mapc-img{
+    position: absolute;
+    top: 50% ;
+    left: -12px;
+    border-radius: 100%;
+    transform: translateY(-50%);
+    animation: spin 7s linear infinite;    
+}
+.ypiter{
+    height: 700px;
+    width: 700px; 
+    animation: spin 8s linear infinite;  
+}
+.ypiter-img{
+    position: absolute;
+    top: 50% ;
+    left: -12px;
+    border-radius: 100%;
+    transform: translateY(-50%);
+    animation: spin 7s linear infinite;    
+} 
+.neptyn{
+  height: 800px;
+  width: 800px; 
+  animation: spin 9s linear infinite; 
+}
+.neptyn-img{
+  position: absolute;
+    top: 50% ;
+    left: -12px;
+    border-radius: 100%;
+    transform: translateY(-50%);
+    animation: spin 7s linear infinite;  
+}
+.plyton{
+  height: 900px;
+  width: 900px; 
+  animation: spin 10s linear infinite; 
+}
+.plyton-img{
+  position: absolute;
+    top: 50% ;
+    left: -12px;
+    border-radius: 100%;
+    transform: translateY(-50%);
+    animation: spin 7s linear infinite;  
+}
+.uran{
+  height: 1000px;
+  width: 1000px; 
+  animation: spin 11s linear infinite; 
+}
+.uran-img{
+  position: absolute;
+  top: 50% ;
+  left: -12px;
+  border-radius: 100%;
+  transform: translateY(-50%);
+  animation: spin 7s linear infinite; 
+}
+.saturn{
+  height: 1100px;
+  width: 1100px; 
+  animation: spin 12s linear infinite; 
+}
+.saturn-img{
+  position: absolute;
+  top: 50% ;
+  left: -12px;
+  border-radius: 100%;
+  transform: translateY(-50%);
+  animation: spin 7s linear infinite; 
+}
